@@ -1,7 +1,7 @@
 ## Note -
 
 ### The logo icon option works as any hamburger menu on mobile devices. 
-### The content is being populated by the use of react-router-dom v5.3.0. As you can see the project is not ### complete.
+### The content is being populated by the use of react-router-dom v5.3.0. As you can see the project is not complete.
 
 ## Available Scripts
 
