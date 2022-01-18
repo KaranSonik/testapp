@@ -15,7 +15,11 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
+          
           <Route exact path="/">
+              <Dashboard/>
+            </Route>
+          <Route exact path="/dashboard">
             <Dashboard/>
           </Route>
 

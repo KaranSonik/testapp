@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.scss'
 import {NavbarData} from './NavbarData'
 import { IconContext } from 'react-icons'
@@ -15,7 +15,7 @@ function Navbar() {
         <>
         <IconContext.Provider value={{color: '#505050'}}>
         <div className='navbar'>
-        <Link to='#' className={sideBar ? 'logoIcActive' : 'logoIc'} onClick={openSideBar}>Logo</Link>
+        <Link  to='#' className={sideBar ? 'logoIcActive' : 'logoIc'} onClick={openSideBar}>Logo</Link>
             <nav className={sideBar ? 'menu active' : 'menu'}>
                 <div className={sideBar ? 'wrapper active' : 'wrapper'}>
                 <ul className='menuList'>
@@ -26,16 +26,18 @@ function Navbar() {
                     {
                         return(
                             <li key={index} className={i.cName}>
-                                <Link to={i.path}>
+                                <NavLink to={i.path} className={isActive => "nav-link" + (!isActive ? " unselected" : "")}>
                                     {i.icon}
                                     <span>{i.title}</span>
-                                </Link>
+                                </NavLink>
                             </li>
                         )
                     })}
                     
                 </ul>
+              
                 </div>
+
             </nav>
             
         </div>

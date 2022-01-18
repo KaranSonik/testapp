@@ -9,7 +9,7 @@ import * as riReactIc from 'react-icons/ri';
 export const NavbarData = [
     {
         title: 'Dashboard',
-        path: '/',
+        path: '/dashboard',
         icon: <mdReactIc.MdWeb />,
         cName: 'navItem'
     },
@@ -21,25 +21,25 @@ export const NavbarData = [
     },
     {
         title: 'Resources',
-        path: '/',
+        path: '/resources',
         icon: <biReactIc.BiBookAlt />,
         cName: 'navItem'
     },
     {
         title: 'Learning Plan',
-        path: '/',
+        path: '/learning',
         icon: <bsReactIc.BsCalendar />,
         cName: 'navItem'
     },
     {
         title: 'Chat',
-        path: '/',
+        path: '/chat',
         icon: <bsReactIc.BsChatLeftDots />,
         cName: 'navItem'
     },
     {
         title: 'Settings',
-        path: '/',
+        path: '/settings',
         icon: <riReactIc.RiSettings4Line />,
         cName: 'navItem'
     },

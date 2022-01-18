@@ -92,6 +92,81 @@
             margin-top: 2em;
 
         }
+        .courses{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            margin-top: 2em;
+            ul{
+                display: flex;
+                width:100%;
+                list-style: none;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+                column-gap: 20px;
+
+                li{
+                    float: left;
+                    width: auto;
+                    a{
+                        background: #4d4cac;
+                        display: flex;
+                        border-radius: 15px;
+                        text-decoration: none;
+                        padding: 1em 1.2em;
+                        width: 100%;
+                        color: white;
+                        align-items: center;
+                        column-gap: 10px;
+                        .coursesLeft{
+                            display: flex;
+                            padding: 1em;
+                            border-radius: 15px;
+                            background:rgba(0, 0, 0, 0.13);
+                            opacity: 0.5;
+                            h4{
+                                margin: 0;
+                                font-size: 1rem;
+                            }
+                            
+                        }
+                        .coursesRight{
+                            display: flex;
+                            align-items: flex-start;
+                            flex-direction: column;
+
+                            h5,h3{
+                                margin: 0;
+                            }
+                            h5{
+                                font-size: 0.8rem;
+                                opacity: 0.6;
+                                white-space: nowrap;
+
+                            }
+                            h3{
+                                font-size: 1em;
+                            }
+                        }
+                        .arrowRight{
+                            display: flex;
+
+                        }
+                    }
+                }
+                #course--1{
+                    background: #9698d6;
+                }
+                #course--2{
+                    background: #ff808b;
+                }
+            }
+
+        }
     }
+
+    
 }
   
